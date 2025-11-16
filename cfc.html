@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <style>
+.club-hero {
+  position: relative;
+  text-align: center;
+  padding: 60px 20px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.club-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("logocfc.png") center/cover no-repeat;
+  filter: blur(40px) brightness(1.2);
+  transform: scale(1.2);
+  z-index: 0;
+}
+.club-hero * {
+  position: relative;
+  z-index: 1;
+}
+.club-hero img {
+  width: 180px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+.club-hero h1 {
+  font-size: 40px;
+  color: black;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+.club-hero p {
+  font-size: 20px;
+  color: #6a348f;
+}
+.club-section {
+  background: #ffeefd;
+  padding: 25px;
+  border-radius: 20px;
+  margin-top: 30px;
+  line-height: 1.6;
+}
+.club-card {
+  padding: 20px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin: 15px 0;
+}
+.center-img {
+  display: block;
+  margin: 30px auto;
+  width: 70%;
+  border-radius: 20px;
+}
+.club-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin: 30px 0;
+}
+.club-gallery img {
+  width: 100%;
+  border-radius: 15px;
+  transition: transform .25s;
+}
+.club-gallery img:hover {
+  transform: scale(1.05);
+}
+.qr-box {
+  text-align: center;
+  margin-top: 40px;
+}
+.qr-box img {
+  width: 170px;
+  border-radius: 15px;
+}
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="left-header">
+      <a href="index.html">
+        <img src="logo.png" alt="Logo trường" class="logo-img">
+      </a>
+      <h1 class="site-title">Câu lạc bộ ngoại khóa THPT Chuyên Chu Văn An</h1>
+    </div>
+
+    <nav class="nav">
+      <a href="index.html">Trang chủ</a>
+      <a href="media.html">MEDIA & EVENT</a>
+      <a href="sport.html">SPORTS</a>
+      <a href="culture.html">CULTURE & SOCIETY</a>
+      <a href="academy.html">ACADEMIC</a>
+    </nav>
+  </header>
+
+  <section class="club-hero">
+    <img src="logocfc.png">
+    <h1>Chu Van An football club</h1>
+  </section>
+
+  <main>
+    <div class="club-section">
+      <h2>Giới thiệu về CLB</h2>
+      <p>
+        Được thành lập vào năm 2021 bởi các học sinh K113, CFC - Chu Văn An Football Club là CLB bóng đá đầu tiên và duy nhất trực thuộc Đoàn trường THPT Chu Văn An. Đây là sân chơi tạo điều kiện cho các bạn có đam mê, sở thích với bộ môn bóng đá có thể học hỏi, kết nối, chia sẻ và luyện tập cải thiện kỹ năng cá nhân, tập thể.
+      </p>
+    </div>
+
+    <div class="club-card">
+      <h2>🏆 Thành tích nổi bật</h2>
+      <ul>
+        <li>Sau ba năm hoạt động, chúng mình đã cùng nhau có những kỉ niệm vô cùng đáng nhớ và thú vị. Đồng thời, CLB là nền móng đưa các bạn tham dự các giải đấu lớn như: An Ninh Thủ Đô, Gifted Students Cup (giải bóng đá trường chuyên), … CFC giờ đã bước sang gen 4.0, chúng mình luôn chào đón và mong chờ sự quan tâm từ các bạn.</li>
+      </ul>
+    </div>
+
+    <img src="cfc.png" class="center-img">
+
+    <h2 style="margin-top: 40px;">📸 Hình ảnh hoạt động</h2>
+    <div class="club-gallery">
+      <img src="cfc1.png" alt="Ảnh hoạt động 1">
+      <img src="cfc2.png" alt="Ảnh hoạt động 2">
+      <img src="cfc3.png" alt="Ảnh hoạt động 3">
+    </div>
+
+    <div class="qr-box">
+      <h2>Sẵn sàng tham gia?</h2>
+      <p>Tìm hiểu thêm tại Fanpage CLB!</p>
+      <a href="https://www.facebook.com/chuvananfootballclub">https://www.facebook.com/chuvananfootballclub</a>
+    </div>
+
+    <footer class="footer-card">
+      <div class="footer-card-inner">
+        <div class="footer-info">
+          <h3>CVA Clubs</h3>
+          <p>Bài thực hành 3.</p>
+        </div>
+
+        <div class="footer-members">
+          <p class="title">Thành viên nhóm:</p>
+          <a href="anh.html">Lê Huy Thành</a>
+          <a href="khanh.html">Nguyễn Ngọc An</a>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+</body>
+</html>
