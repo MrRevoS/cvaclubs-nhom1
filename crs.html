@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <style>
+
+.club-hero {
+  position: relative;
+  text-align: center;
+  padding: 60px 20px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.club-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("logocrs.png") center/cover no-repeat;
+  filter: blur(40px) brightness(1.2);
+  transform: scale(1.2);
+  z-index: 0;
+}
+.club-hero * {
+  position: relative;
+  z-index: 1;
+}
+
+    .club-hero img {
+      width: 180px;
+      border-radius: 15px;
+      margin-bottom: 15px;
+    }
+
+    .club-hero h1 {
+      font-size: 40px;
+      color: black;
+      margin-bottom: 10px;
+      font-weight: 800;
+    }
+
+    .club-hero p {
+      font-size: 20px;
+      color: #6a348f;
+    }
+
+    .club-section {
+      background: #ffeefd;
+      padding: 25px;
+      border-radius: 20px;
+      margin-top: 30px;
+      line-height: 1.6;
+    }
+
+    .club-gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      margin: 30px 0;
+    }
+
+    .club-gallery img {
+      width: 100%;
+      border-radius: 15px;
+      transition: transform .25s;
+    }
+
+    .club-gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .club-card {
+      padding: 20px;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin: 15px 0;
+    }
+
+    .qr-box {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .qr-box img {
+      width: 170px;
+      border-radius: 15px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="left-header">
+      <a href="index.html">
+        <img src="logo.png" alt="Logo trường" class="logo-img">
+      </a>
+      <h1 class="site-title">Câu lạc bộ ngoại khóa THPT Chuyên Chu Văn An</h1>
+    </div>
+
+    <nav class="nav">
+      <a href="index.html">Trang chủ</a>
+      <a href="media.html">MEDIA & EVENT</a>
+      <a href="sport.html">SPORTS</a>
+      <a href="culture.html">CULTURE & SOCIETY</a>
+      <a href="academy.html">ACADEMIC</a>
+    </nav>
+  </header>
+
+  <!-- HERO CLB -->
+  <section class="club-hero">
+    <img src="logocrs.png">
+    <h1>CVA Reading Station</h1>
+  </section>
+
+  <main>
+
+    <!-- GIỚI THIỆU -->
+    <div class="club-section">
+      <h2>Giới thiệu về CLB</h2>
+      <p>
+        CVA Reading Station - miền đất hứa diệu kỳ cùng những con chữ bất tận trải dài - là câu lạc bộ sách đầu tiên và duy nhất thuộc trường THPT Chu Văn An. Mang trong mình sứ mệnh lan tỏa văn hóa đọc và tình yêu sách tới mọi người, cánh cửa che giấu các bí ẩn cuốn hút của vùng đất trên trang sách đã mở ra vào ngày 07/11/2016. Sát cánh cùng CRS trên con đường chinh phục nơi đó là khát khao, là hoài bão về những góc nhìn mới mẻ, sặc sỡ hơn của thế giới văn chương; đồng thời xóa bỏ lầm tưởng khô khan quen thuộc của sách.
+      </p>
+    </div>
+
+    <!-- THÀNH TÍCH -->
+    <div class="club-card">
+      <h2>🏆 Thành tích nổi bật</h2>
+      <ul>
+        <li>Qua 9 năm hoạt động đầy nhiệt huyết với các sự kiện nổi bật như: “Over the tales”, “CRS in Wonderland”, …, miền đất mênh mông của những câu chuyện hứa hẹn đem đến một CVA Reading Station thơ mộng, huyền ảo giữa lòng CHUTOPIA bay bổng. </li>
+      </ul>
+    </div>
+
+    <img src="crs.png" class="center-img">
+
+    <!-- BỘ SƯU TẬP ẢNH -->
+    <h2 style="margin-top: 40px;">📸 Hình ảnh hoạt động</h2>
+    <div class="club-gallery">
+      <img src="crs1.png" alt="Ảnh hoạt động 1">
+      <img src="crs2.png" alt="Ảnh hoạt động 2">
+      <img src="crs3.png" alt="Ảnh hoạt động 3">
+    </div>
+
+    <!-- QR -->
+    <div class="qr-box">
+      <h2>Sẵn sàng tham gia?</h2>
+      <p>Tìm hiểu thêm tại Fanpage CLB!</p>
+      <a href="https://www.facebook.com/cvareadingstation">https://www.facebook.com/cvareadingstation</a>
+    </div>
+
+    <footer class="footer-card">
+  <div class="footer-card-inner">
+
+    <div class="footer-info">
+      <h3>CVA Clubs</h3>
+      <p>Bài thực hành 3.</p>
+    </div>
+
+    <div class="footer-members">
+      <p class="title">Thành viên nhóm:</p>
+      <a href="anh.html">Lê Huy Thành</a>
+      <a href="khanh.html">Nguyễn Ngọc An</a>
+    </div>
+
+  </div>
+</footer>
+
+  </main>
+
+</body>
+</html>
