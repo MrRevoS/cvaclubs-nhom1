@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <style>
+
+.club-hero {
+  position: relative;
+  text-align: center;
+  padding: 60px 20px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.club-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("logokaruchu.png") center/cover no-repeat;
+  filter: blur(40px) brightness(1.2);
+  transform: scale(1.2);
+  z-index: 0;
+}
+.club-hero * {
+  position: relative;
+  z-index: 1;
+}
+
+    .club-hero img {
+      width: 180px;
+      border-radius: 15px;
+      margin-bottom: 15px;
+    }
+
+    .club-hero h1 {
+      font-size: 40px;
+      color: black;
+      margin-bottom: 10px;
+      font-weight: 800;
+    }
+
+    .club-hero p {
+      font-size: 20px;
+      color: #6a348f;
+    }
+
+    .club-section {
+      background: #ffeefd;
+      padding: 25px;
+      border-radius: 20px;
+      margin-top: 30px;
+      line-height: 1.6;
+    }
+
+    .club-gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      margin: 30px 0;
+    }
+
+    .club-gallery img {
+      width: 100%;
+      border-radius: 15px;
+      transition: transform .25s;
+    }
+
+    .club-gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .club-card {
+      padding: 20px;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin: 15px 0;
+    }
+
+    .qr-box {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .qr-box img {
+      width: 170px;
+      border-radius: 15px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="left-header">
+      <a href="index.html">
+        <img src="logo.png" alt="Logo trường" class="logo-img">
+      </a>
+      <h1 class="site-title">Câu lạc bộ ngoại khóa THPT Chuyên Chu Văn An</h1>
+    </div>
+
+    <nav class="nav">
+      <a href="index.html">Trang chủ</a>
+      <a href="media.html">MEDIA & EVENT</a>
+      <a href="sport.html">SPORTS</a>
+      <a href="culture.html">CULTURE & SOCIETY</a>
+      <a href="academy.html">ACADEMIC</a>
+    </nav>
+  </header>
+
+  <section class="club-hero">
+    <img src="logokaruchu.png">
+    <h1>Karuchu</h1>
+  </section>
+
+  <main>
+
+    <div class="club-section">
+      <h2>Giới thiệu về CLB</h2>
+      <p>
+        KaruChu - CVA 日本語クラブ là câu lạc bộ văn hóa Nhật Bản được thành lập vào ngày giải phóng miền Nam, là kết tinh từ tình yêu và hy vọng đối với Nhật Bản của K114 Nhật. Lấy phương châm “Shichiten-hakki” hay “7 lần vấp ngã, 8 lần đứng lên” giống như búp bê Daruma, câu lạc bộ luôn kiên cường đứng vững trước những khó khăn thử thách để thực hiện sứ mệnh lan tỏa văn hóa xứ Phù Tang tới các học sinh trường THPT Chu Văn An.
+      </p>
+    </div>
+
+    <div class="club-card">
+      <h2>🏆 Thành tích nổi bật</h2>
+      <ul>
+        <li>Qua một năm với nhiều thành công cũng như ấp ủ bao hoài bão và ước mơ cho nhiệm kỳ tiếp theo, câu lạc bộ hứa hẹn đem lại một môi trường năng động và sáng tạo, với những buổi sinh hoạt cùng sự kiện lớn nhỏ đầy bất ngờ thú vị.
+Karuchu hy vọng sẽ không chỉ dừng lại ở một CLB sở thích mà còn là một gia đình cùng đồng hành, chia sẻ và làm cho những tháng ngày ở Chu 3 của bạn rực rỡ như “nắng Chu”.</li>
+      </ul>
+    </div>
+
+    <img src="karuchu.png" class="center-img">
+
+    <h2 style="margin-top: 40px;">📸 Hình ảnh hoạt động</h2>
+    <div class="club-gallery">
+      <img src="karuchu1.png" alt="Ảnh hoạt động 1">
+      <img src="karuchu2.png" alt="Ảnh hoạt động 2">
+      <img src="karuchu3.png" alt="Ảnh hoạt động 3">
+    </div>
+
+    <div class="qr-box">
+      <h2>Sẵn sàng tham gia?</h2>
+      <p>Tìm hiểu thêm tại Fanpage CLB!</p>
+      <a href="https://www.facebook.com/profile.php?id=100091836229369">https://www.facebook.com/profile.php?id=100091836229369</a>
+    </div>
+
+    <footer class="footer-card">
+      <div class="footer-card-inner">
+        <div class="footer-info">
+          <h3>CVA Clubs</h3>
+          <p>Bài thực hành 3.</p>
+        </div>
+
+        <div class="footer-members">
+          <p class="title">Thành viên nhóm:</p>
+          <a href="anh.html">Lê Huy Thành</a>
+          <a href="khanh.html">Nguyễn Ngọc An</a>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+</body>
+</html>
