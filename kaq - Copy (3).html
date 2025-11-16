@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>CLB Kings & Queens - THPT Chuyên Chu Văn An</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ====== STYLE RIÊNG CHO TRANG CLB ====== */
+
+    .club-hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(135deg, #ffd6f5, #e6c6ff);
+      border-radius: 20px;
+      margin: 20px 0;
+    }
+
+    .club-hero img {
+      width: 180px;
+      border-radius: 15px;
+      margin-bottom: 15px;
+    }
+
+    .club-hero h1 {
+      font-size: 40px;
+      color: #5b2e8f;
+      margin-bottom: 10px;
+      font-weight: 800;
+    }
+
+    .club-hero p {
+      font-size: 20px;
+      color: #6a348f;
+    }
+
+    .club-section {
+      background: #ffeefd;
+      padding: 25px;
+      border-radius: 20px;
+      margin-top: 30px;
+      line-height: 1.6;
+    }
+
+    .club-gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      margin: 30px 0;
+    }
+
+    .club-gallery img {
+      width: 100%;
+      border-radius: 15px;
+      transition: transform .25s;
+    }
+
+    .club-gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .club-card {
+      padding: 20px;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin: 15px 0;
+    }
+
+    .qr-box {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .qr-box img {
+      width: 170px;
+      border-radius: 15px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- GIỮ NGUYÊN HEADER TỪ TRANG INDEX -->
+  <header class="header">
+    <div class="left-header">
+      <a href="index.html">
+        <img src="logo.png" alt="Logo trường" class="logo-img">
+      </a>
+      <h1 class="site-title">Câu lạc bộ ngoại khóa THPT Chuyên Chu Văn An</h1>
+    </div>
+
+    <nav class="nav">
+      <a href="index.html">Trang chủ</a>
+      <a href="media.html">MEDIA & EVENT</a>
+      <a href="sport.html">SPORTS</a>
+      <a href="culture.html">CULTURE & SOCIETY</a>
+      <a href="academy.html">ACADEMIC</a>
+    </nav>
+  </header>
+
+  <!-- HERO CLB -->
+  <section class="club-hero">
+    <img src="logokaq.png" alt="Kings & Queens Logo">
+    <h1>CLB Kings & Queens</h1>
+    <p>Cờ vua · Cờ tướng · Đam mê chiến thuật – Tỏa sáng bản lĩnh</p>
+  </section>
+
+  <main>
+
+    <!-- GIỚI THIỆU -->
+    <div class="club-section">
+      <h2>Giới thiệu về CLB</h2>
+      <p>
+        Kings & Queens là mái nhà chung của những bạn trẻ yêu thích bộ môn cờ vua và cờ tướng.
+        Thành lập từ năm 2021, CLB luôn giữ vững tinh thần học hỏi, sáng tạo và gắn kết. 
+        Đây cũng là nơi các thành viên được rèn luyện tư duy chiến thuật, bản lĩnh thi đấu và kỹ năng teamwork.
+      </p>
+    </div>
+
+    <!-- THÀNH TÍCH -->
+    <div class="club-card">
+      <h2>🏆 Thành tích nổi bật</h2>
+      <ul>
+        <li>Tổ chức thành công 3 mùa Exchess từ năm 2022</li>
+        <li>Chủ trì & điều hành giải đấu CET</li>
+        <li>Đạt 10 huy chương tại Hội Khỏe Phù Đổng Thành phố Hà Nội 2024</li>
+      </ul>
+    </div>
+
+    <!-- BỘ SƯU TẬP ẢNH -->
+    <h2 style="margin-top: 40px;">📸 Hình ảnh hoạt động</h2>
+    <div class="club-gallery">
+      <img src="kaq1.jpg" alt="Ảnh hoạt động 1">
+      <img src="kaq2.jpg" alt="Ảnh hoạt động 2">
+      <img src="kaq3.jpg" alt="Ảnh hoạt động 3">
+    </div>
+
+    <!-- QR -->
+    <div class="qr-box">
+      <h2>Sẵn sàng tham gia?</h2>
+      <p>Quét mã QR dưới đây để đăng ký vào CLB!</p>
+      <img src="qr.png" alt="QR đăng ký">
+    </div>
+
+  </main>
+
+</body>
+</html>
